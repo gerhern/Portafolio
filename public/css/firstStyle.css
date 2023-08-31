@@ -1,0 +1,52 @@
+:root{
+    --darkBlack: #0F1819;
+    --darlBlue: #101728;
+    --electricBlue: #1F41BB;
+    --darkPurple: #260E69;
+    --middlePurple: #9340FF;
+    --middlePink: #FF3C5F;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--darlBlue);
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    background-color:  var(--darkBlack);
+    opacity: 0.8;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item{
+    margin: 0 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color:white;
+}
+
+.nav-item:active{
+    border:1px solid white;
+    border-radius: 0.3rem;
+}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\webController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//Rutas de pagina de inicio
+Route::get('/', [webController::class, 'home'])->name('home');
