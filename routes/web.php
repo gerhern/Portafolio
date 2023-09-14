@@ -20,3 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 //Rutas de pagina de inicio
 Route::get('/', [webController::class, 'home'])->name('home');
+
+//Rutas de proyectos
+Route::get('project/{id}',[webController::class, 'details'])->name('details');

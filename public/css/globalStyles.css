@@ -23,6 +23,33 @@ body{
     background-color: var(--darlBlue);
 }
 
+.secondTitle{
+    margin: 2rem 1rem;
+    font-size: 4.5rem;
+    color:white;
+}
+
+.thirdTitle{
+    margin:1.5rem 0;
+    font-size: 3rem;
+}
+
+.middleText{
+    font-size: 2rem;
+    margin:2.5rem;
+}
+
+.regularButton{
+    padding: 1rem;
+    margin: 4rem auto;
+    background: linear-gradient(90deg, rgba(147,64,255,1) 51%, rgba(255,60,95,1) 100%);
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color:white;
+}
+
+/* Estilos de la cabecera y menu de navegacion */
 .header{
     display:flex;
     flex-direction: row;
@@ -34,6 +61,14 @@ body{
     opacity: 0.8;
 }
 
+.header a{
+    color:white;
+}
+
+ .logoTitle{
+    text-decoration: none;
+ }
+
 .navigation{
     display: flex;
     flex-direction: row;
@@ -43,10 +78,13 @@ body{
     margin: 0 1rem;
     padding: 1rem;
     text-decoration: none;
-    color:white;
 }
 
 .nav-item:active{
     border:1px solid white;
     border-radius: 0.3rem;
+}
+
+.textPurple{
+    color: var(--middlePurple);
 }

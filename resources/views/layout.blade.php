@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Lorem ipsum dolor</title>
-    <link rel="stylesheet" href="{{asset('css/firstStyle.css')}}">
+    <title>{{env('APP_PORTNAME')}}</title>
+    <link rel="stylesheet" href="{{asset('css/globalStyles.css')}}">
 
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <span class="tittle">Lorem ipsum dolor.</span>
+            <a class="logoTitle" href="{{route('home')}}">{{env('APP_NAME')}}</a>
         </div>
         <nav class="navigation">
-            <a class="nav-item" href="#">lorem</a>
-            <a class="nav-item" href="#">ipsum</a>
-            <a class="nav-item" href="#">dolor</a>
+            <a class="nav-item" href="#">Proyectos</a>
+            <a class="nav-item" href="#">Información</a>
+            <a class="nav-item" href="#">Contacto</a>
         </nav>
     </header>
 
