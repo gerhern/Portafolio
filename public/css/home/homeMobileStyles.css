@@ -1,17 +1,18 @@
-/* .container{
+.container{
     display: flex;
     flex-direction: column;
-} */
-/* .landing{
+}
+
+.landing{
     max-width: 100%;
     background-image: url("https://picsum.photos/1200/600");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-} */
+}
 
-/* .middleOpacity{
+.middleOpacity{
     width: 100%;
     padding: 10rem 0;
     display: flex;
@@ -19,205 +20,165 @@
     justify-content: end;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.8);
-} */
-
-/* .descriptionBox{
-    max-width: 50%;
-    margin: 8rem 2rem;
-    color:white;
-} */
-
-.descriptionBox{
-    max-width: 50%;
 }
 
-/* .descriptionBox h1{
+.descriptionBox{
+    max-width: 90%;
+    margin: 8rem 2rem;
+    color:white;
+}
+
+.descriptionBox h1{
     font-size: var(--sizeTextTitle);
     text-align: center;
     letter-spacing: 0.3rem;
     margin:1rem 0;
-} */
+}
 
-/* .descriptionBox h3{
+.descriptionBox h3{
     font-size: 3rem;
     margin: 1rem 0;
     letter-spacing: 0.1rem;
     text-align: center;
-} */
-
-.descriptionBox p{
-    font-size: 2rem;
-    /* text-align: center; */
 }
 
-/* .importantSpan{
-    color:var(--middlePurple);
-} */
+.descriptionBox p{
+    font-size: 1.6rem;
+    text-align: center;
+}
 
-/* .media{
+.importantSpan{
+    color:var(--middlePurple);
+}
+
+.media{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2rem;
-} */
+}
 
-/* .mediaImg{
+.mediaImg{
     margin: 0 1rem;
     border-radius: 10px;
     width: 5rem;
-} */
+}
 
-/* .knowledgeSection{
+.knowledgeSection{
     width: 100%;
     padding: 20rem 3.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-} */
+}
 
-/* .fullwidth{
+.fullwidth{
     width: 100%;
-} */
+}
 
-/* .knowlegeBox{
+.knowlegeBox{
     display: flex;
     flex-direction: column;
-} */
+}
 
-/* .knowledge{
+.knowledge{
     display:flex;
-    flex-direction: row;
-} */
-
-.professionalSection {
-    /* 
-    margin: 10rem  auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    */
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
-/* .professionalTitle{
+.professionalSection {
+    margin: 10rem  auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.professionalTitle{
     width: 100%;
     margin: 10rem 0;
     text-align:center;
-} */
-
+}
 
 .job{
-    /* 
+    margin: 2.5rem 0;
     background-image: url("https://picsum.photos/600/300");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    min-height: 50rem;
-    */
-    max-width: 20%;
-} 
-
+    max-width: 80%;
+    min-height: 35rem;
+}
 
 .imgJob{
-    /* 
     width: 100%;
+    min-height: 35rem;
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 10px;
-    */
-    min-height: 50rem;
     
 }
 
 .textJob{
-    /* 
+    min-height: 35rem;
     padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    */
-    min-height: 50rem;
-} 
+}
 
-/* .textJob h2{
+.textJob h2{
     text-align: center;
-} */
+}
 
-/* .professionalList{
+.professionalList{
     margin: 2rem 3rem;
     list-style: none;
-} */
+}
 
-/* .professionalList li{
+.professionalList li{
     font-size: 1.4rem;
-} */
+}
 
 /* .professionalList li:nth-child(even){
     color:gray;
 } */
 
-/* .professionalList ul{
+.professionalList ul{
     margin: 0.8rem 2rem;
     list-style: none;
-} */
+}
 
-/* .academy{
+.academy{
     margin: 10rem 0;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .studyBox{
-    /* 
-    display: flex;
-    */
-    flex-direction: row;
-}
-.studyText{
-    /* 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    */
-    align-items: flex-start;
-}
-
-.studyText h6{
-/* 
-    font-size: 1rem;
-    */
-    margin: auto 0;
-}
-
-/* 
-.studyText p{
-    font-size: 1.7rem;
-
-}
-
-*/
-/* 
-.projects{
-    padding: 5rem 3rem;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.noProjectBox{
-    max-width: 50%;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 
+.studyText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.noProjectBox p{
-    text-align: left;
-} */
+.studyText h6{
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.studyText p{
+    font-size: 1.7rem;
+    text-align: center;
+}

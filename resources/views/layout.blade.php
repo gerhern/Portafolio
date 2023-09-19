@@ -15,11 +15,11 @@
         <div class="logo">
             <a class="logoTitle" href="{{route('home')}}">{{env('APP_NAME')}}</a>
         </div>
-        <nav class="navigation">
+        {{-- <nav class="navigation">
             <a class="nav-item" href="#">Proyectos</a>
             <a class="nav-item" href="#">Información</a>
             <a class="nav-item" href="#">Contacto</a>
-        </nav>
+        </nav> --}}
     </header>
 
     @yield('content')
