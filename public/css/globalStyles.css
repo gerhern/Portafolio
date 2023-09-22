@@ -90,12 +90,88 @@ hr{
     text-decoration: none;
  }
 
-.navigation{
+ .menuHamburgerLogo{
+    width: 5rem;
+ }
+
+ .navigationMenu{
+    display: flex;
+    align-items: center;
+ }
+
+ .navigationMenu ul{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    list-style: none;
 }
 
-.nav-item{
+ .navigationMenu li{
+    margin-right: 1rem;
+ }
+
+ .navigationMenu a{
+    text-decoration: none;
+}
+
+ .navigationMenu li:last-child{
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.menu-icon, #check{
+    display: none;
+}
+/* .navigation{
+    display: flex;
+    flex-direction: row;
+} */
+
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .navigationMenu ul{
+        display: block;
+        position: fixed;
+        top:70px;
+        left:-100%;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .navigationMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .navigationMenu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+}
+
+
+/* .nav-item{
     margin: 0 1rem;
     padding: 1rem;
     text-decoration: none;
@@ -104,7 +180,7 @@ hr{
 .nav-item:active{
     border:1px solid white;
     border-radius: 0.3rem;
-}
+} */
 
 .textPurple{
     color: var(--middlePurple);

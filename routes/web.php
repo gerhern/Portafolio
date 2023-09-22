@@ -22,4 +22,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [webController::class, 'home'])->name('home');
 
 //Rutas de proyectos
-Route::get('project/{id}',[webController::class, 'details'])->name('details');
+Route::get('proyectos', [webController::class, 'projects'])->name('proyects');
+// Route::get('project/{id}',[webController::class, 'details'])->name('details');
