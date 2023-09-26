@@ -21,29 +21,37 @@ class webController extends Controller
     public function projects(){
 
         try{
-            $projects = Project::all();
-            $technology = Technology::first();
+            $projects = Project::with('technologies')->get();
 
         }
         catch(Exception $e){
-
+            abort(404);
         }
 
         finally{
             return view('projects.projects', [
-                // 'projects' => $projects,
-                'projects' => [],
-                'technology' => $technology
+                'projects' => $projects,
+                // 'projects' => []
             ]);
         }
     }
 
-    // public function details($id){
-        
-    //     $project = Project::find($id);
+    public function projectDetails($id){
 
-    //     return view('details', [
-    //         'project' => $project
-    //     ]);
-    // }
+        try{
+
+            $project = Project::findorfail($id);
+
+        }
+        catch(Exception $e){
+            abort(404);
+        }
+
+        finally{
+            return view('projects.projectDetails', [
+                'project' => $project
+            ]);
+        }
+
+    }
 }

@@ -55,7 +55,6 @@ body{
 
 .regularButton{
     padding: 1rem;
-    margin: 4rem auto;
     background: linear-gradient(90deg, rgba(147,64,255,1) 51%, rgba(255,60,95,1) 100%);
     border-radius: 1.5rem;
     font-size: 2rem;
@@ -169,18 +168,6 @@ hr{
         transition: all .25s;
     }
 }
-
-
-/* .nav-item{
-    margin: 0 1rem;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.nav-item:active{
-    border:1px solid white;
-    border-radius: 0.3rem;
-} */
 
 .textPurple{
     color: var(--middlePurple);

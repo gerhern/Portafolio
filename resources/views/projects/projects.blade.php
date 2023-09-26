@@ -1,6 +1,8 @@
 @extends('layout')
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/projects/projectsMobileStyles.css') }}">
+<link rel="stylesheet" href="{{ asset('css/projects/projectsStyles.css')}}" media="screen and (min-width: 1024px)">
+
 <div class="container">
     <main class="projects">
         <div class="projectsText">
@@ -10,25 +12,9 @@
         </div>
         <div class="projectsList">
             @forelse ($projects as $project)
-            <div class="projectBox">
-                <div class="tecnoList">
-                    <img class="tecnoImg" src='{{ asset("img/tecnoLogos/".$technology->url_image) }}' alt="photo">
-                </div>
-                <div class="projectListText">
-                    <h2 class="thirdTitle textPurple">{{ $project->title }}</h2>
-                    <p class="middleText">{{ $project->short_description }}</p>
-                </div>
-            </div>    
+                <x-project  :project="$project"/>
             @empty
-                <div class="projectBox">
-                    <div class="tecnoList">
-                        <img class="tecnoImg" src='{{ asset("img/tecnoLogos/".$technology->url_image) }}' alt="photo">
-                    </div>
-                    <div class="projectListText">
-                        <h2 class="thirdTitle textPurple">Ooops!</h2>
-                        <p class="middleText">Aun no hay proyectos disponibles que mostrar, sigue pendiente para próximas actualizaciones.</p>
-                    </div>
-                </div>     
+                <x-project/>
             @endforelse
         </div>
     </main>

@@ -1,49 +1,25 @@
-<div class="proyectCard">
-    <div class="cardText">
-        <h3 class="thirdTitle">{{$project->title}}</h3>
-        <p class="middleText">{{$project->short_description}}</p>
-        <h6>{{$project->created_at->diffForHumans()}}</h6>
-        <a class="regularButton" href="{{route('details', ['id' => $project->id])}}">Lorem ipsum</a>
+<div class="projectBox">
+    <div class="tecnoList">
+            @if (isset($project))
+                @foreach ($project->technologies as $technology )
+                    <img class="tecnoImg" src='{{ asset("img/tecnoLogos/".$technology->url_image) }}' alt="photo">    
+                @endforeach
+            @else
+                <img class="tecnoImg" src='{{ asset("img/tecnoLogos/notec.svg") }}' alt="photo">    
+            @endif
     </div>
-    <img class="cardImg" src="{{$project->url_img}}" alt="photo">
+    <div class="projectListText">
+        @if (isset($project))
+            <h2 class="thirdTitle textPurple">{{ $project->title }}</h2>
+            <p class="middleText">{{ $project->short_description }}</p> 
+            <div class="linkBox" >
+                <a class="projectLink" href="{{route("projectDetails", ['id' => $project->id])}}">Ver más
+                    <img class="linkImage" src="{{ asset('img/logos/magnifier-logo.svg') }}" alt="photo">
+                 </a>
+            </div>
+        @else
+            <h2 class="thirdTitle textPurple">Ooops!</h2> 
+            <p class="middleText">Aun no hay proyectos disponibles que mostrar, sigue pendiente para próximas actualizaciones.</p>
+        @endif
+    </div>
 </div>
-
-<style>
-    .proyectCard{
-        max-width: 70%;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        margin: 10rem auto;
-    }
-
-    .cardText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 5rem 2rem;
-        color:white;
-    
-    }
-
-    .cardText h3{
-        color: var(--middlePurple);
-    }
-
-    .cardText p{
-        margin: 1rem 0;
-    }
-
-    .cardText h6{
-        font-size: 1.5rem;
-    }
-    
-    .cardImg{
-        margin:7rem 2rem;
-        border-radius: 2rem;
-        max-height: 15rem;
-        align-self: baseline;
-    }
-</style>

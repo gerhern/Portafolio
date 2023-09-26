@@ -57,5 +57,34 @@
 }
 
 .projectListText p{
-    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.projectLink {
+    min-width: 25%;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(147,64,255,1) 51%, rgba(255,60,95,1) 100%);
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    
+}
+.linkBox{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center ;
+    align-items: center;    
+}
+
+.linkImage{
+    width: 2rem;
+    font-size: 2rem;
+}
+
+.projectLink a{
+    text-decoration: none;
+    color:white;
 }

@@ -6,14 +6,18 @@ use Illuminate\View\Component;
 
 class project extends Component
 {
+
+    public $project;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($project = null)
     {
         //
+        $this->project = $project;
     }
 
     /**
