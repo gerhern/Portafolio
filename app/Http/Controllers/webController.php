@@ -7,6 +7,8 @@ use App\Models\Technology;
 use Exception;
 use Illuminate\Http\Request;
 
+use function PHPUnit\Framework\isEmpty;
+
 class webController extends Controller
 {
     //Landing page del sitio
@@ -22,36 +24,35 @@ class webController extends Controller
 
         try{
             $projects = Project::with('technologies')->get();
-
+            if(sizeof($projects)<1){
+                throw new Exception();
+            }
         }
         catch(Exception $e){
-            abort(404);
+            // abort(404);
+            $projects = [];
         }
-
-        finally{
-            return view('projects.projects', [
-                'projects' => $projects,
-                // 'projects' => []
-            ]);
-        }
+        
+        return view('projects.projects', [
+            'projects' => $projects,
+            // 'projects' => []
+        ]);
     }
 
     public function projectDetails($id){
 
         try{
 
-            $project = Project::findorfail($id);
+            $project = Project::findOrFail($id);
 
         }
         catch(Exception $e){
             abort(404);
         }
-
-        finally{
-            return view('projects.projectDetails', [
-                'project' => $project
-            ]);
-        }
+        
+        return view('projects.projectDetails', [
+            'project' => $project
+        ]);
 
     }
 }

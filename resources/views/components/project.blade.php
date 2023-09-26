@@ -1,4 +1,9 @@
+    @empty($project)
 <div class="projectBox">
+    @else
+    <div class="projectBox slides">    
+    @endempty
+
     <div class="tecnoList">
             @if (isset($project))
                 @foreach ($project->technologies as $technology )
@@ -17,6 +22,7 @@
                     <img class="linkImage" src="{{ asset('img/logos/magnifier-logo.svg') }}" alt="photo">
                  </a>
             </div>
+            {{-- <img class="projectListImg" src="https://picsum.photos/200/200" alt="photo"> --}}
         @else
             <h2 class="thirdTitle textPurple">Ooops!</h2> 
             <p class="middleText">Aun no hay proyectos disponibles que mostrar, sigue pendiente para próximas actualizaciones.</p>

@@ -21,6 +21,11 @@ class DatabaseSeeder extends Seeder
         // Project::factory(1)->create();
         //Proyectos creados
         Project::factory()->create([
+            'title' => 'Control de activos',
+            'short_description' => 'Administración de activos y prestamos de equipo de computo empresarial'
+        ]);
+
+        Project::factory()->create([
             'title' => 'Calculadora de emisiones',
             'short_description' => 'Evaluacion y compensacion de emisiones de carbono por medio de transporte.'
         ]);
