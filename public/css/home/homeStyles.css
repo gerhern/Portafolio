@@ -119,6 +119,18 @@
     max-width: 20%;
 } 
 
+#dorothy{
+    background-size: contain;
+}
+
+#artf{
+    background-size: contain;
+}
+
+#cultura{
+    background-size: contain;
+}
+
 
 .imgJob{
     /* 

@@ -55,7 +55,7 @@
 }
 
 .slideSelector{
-    width: 75%;
+    width: 100%;
     margin-bottom: 10rem;
     display: flex;
     justify-content: space-evenly;
@@ -69,9 +69,13 @@
 }
 
 #captionText{
-    width: 100%;
+    /* width: 100%; */
+    padding: 1rem;
+    margin-bottom: 10rem;
+    border-radius: 9px;
     display: block;
     text-align: center;
     color: white;
-    background: linear-gradient(90deg, rgba(147,64,255,1) 51%, rgba(255,60,95,1) 100%);
+    background-color: var(--middlePurple);
+    /* background: linear-gradient(90deg, rgba(147,64,255,1) 51%, rgba(255,60,95,1) 100%); */
 }

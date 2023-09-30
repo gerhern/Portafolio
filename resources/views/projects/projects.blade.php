@@ -13,21 +13,24 @@
         <div class="projectsList">
             @empty($projects)
             @else
-            <div class="middleText" id="captionText">Click en una imagen para empezar</div>
+            <div class="middleText" id="captionText">Seleccione proyecto para iniciar</div>
             @endempty
+            <div class="slideSelector">
+                @forelse ($projects as $project)
+                <div class="regularButton" onclick="currentDiv({{$project->id}})">
+                    {{ $project->title }}
+                </div>
+                    {{-- <img src="{{ asset("img/img/$project->url_img") }}" onclick="currentDiv({{$project->id}})"> --}}
+                @empty
+                @endforelse
+
+            </div>
             @forelse ($projects as $project)
                 <x-project  :project="$project"/>
             @empty
                 <x-project/>
             @endforelse
 
-            <div class="slideSelector">
-                @forelse ($projects as $project)
-                    <img src="https://picsum.photos/200" onclick="currentDiv({{$project->id}})">
-                @empty
-                @endforelse
-
-            </div>
         </div>
     </main>
 </div>

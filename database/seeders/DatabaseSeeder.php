@@ -57,5 +57,10 @@ class DatabaseSeeder extends Seeder
             'name' => "MySql",
             'url_image' => 'mysql-img.png'
         ]);
+
+        Technology::factory()->create([
+            'name' => "Php",
+            'url_image' => 'php-img.png'
+        ]);
     }
 }

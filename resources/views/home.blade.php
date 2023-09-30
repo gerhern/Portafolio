@@ -86,7 +86,7 @@
             <h2 class="thirdTitle ">Experiencia profesional</h2>
         </div>
 
-        <div class="job">
+        <div class="job" id="dorothy">
             <div class="imgJob">
                 <div class="textJob">
                     <h6 class="smallText textEBlue">2022 - 2023</h6>
@@ -103,7 +103,7 @@
             
         </div>
 
-        <div class="job">
+        <div class="job" id="artf">
             <div class="imgJob">
                 <div class="textJob">
                     <h6 class="smallText textEBlue">2021 - 2022</h6>
@@ -121,7 +121,7 @@
             </div>
         </div>
 
-        <div class="job">
+        <div class="job" id="cultura">
             <div class="imgJob">
                 <div class="textJob">
                     <h6 class="smallText textEBlue">2020</h6>

@@ -5,7 +5,8 @@
 
 .landing{
     max-width: 100%;
-    background-image: url("https://picsum.photos/1200/600");
+    /* background-image: url("https://picsum.photos/1200/600"); */
+    background-image: url("../../img/img/landing.jpg");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +112,21 @@
     max-width: 80%;
     min-height: 35rem;
     border:1px solid var(--middlePurple);
+}
+
+#dorothy{
+    background-image: url("../../img/img/dorothy.png");
+    background-size: cover;
+}
+
+#artf{
+    background-image: url("../../img/img/artf.jpg");
+    background-size: cover;
+}
+
+#cultura{
+    background-image: url("../../img/img/cultura.jpg");
+    background-size: cover;
 }
 
 .imgJob{
