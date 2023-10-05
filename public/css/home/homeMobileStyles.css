@@ -6,7 +6,7 @@
 .landing{
     max-width: 100%;
     /* background-image: url("https://picsum.photos/1200/600"); */
-    background-image: url("../../img/img/landing.jpg");
+    background-image: url("../../img/img/landing.webp");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +115,7 @@
 }
 
 #dorothy{
-    background-image: url("../../img/img/dorothy.png");
+    background-image: url("../../img/inventarioInterno/dorothy.png");
     background-size: cover;
 }
 

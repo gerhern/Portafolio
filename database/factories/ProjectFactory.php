@@ -21,7 +21,7 @@ class ProjectFactory extends Factory
             'title' => $this->faker->sentences(2, true),
             'short_description' => $this->faker->realText(),
             'description' => $this->faker->realText(1500),
-            'url_img' => 'https://picsum.photos/600/300'
+            // 'url_img' => 'https://picsum.photos/600/300'
         ];
     }
 }

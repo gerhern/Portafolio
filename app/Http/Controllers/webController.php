@@ -39,11 +39,13 @@ class webController extends Controller
         ]);
     }
 
+    //Detalles por proyecto
     public function projectDetails($id){
 
         try{
 
-            $project = Project::findOrFail($id);
+            $project = Project::with(['technologies', 'images'])->findOrFail($id);
+            // dd($project);
 
         }
         catch(Exception $e){

@@ -33,6 +33,16 @@
     background: linear-gradient(0deg, rgba(38,14,105,1) 0%, rgba(16,23,40,1) 95%);
 }
 
+
+.tecnoImg{
+    width: 7rem;
+    /* background-color: white; */
+}
+
+.tecnoImg img{
+    max-width: 5rem;
+}
+
 .projectLink {
     width: 35%;
     margin: 0 auto;

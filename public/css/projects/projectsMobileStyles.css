@@ -37,7 +37,7 @@
 }
 
 .tecnoList{
-    margin-top: -6rem;
+    margin-top: -5.5rem;
     /* margin-left: -1.5rem; */
     display: flex;
     flex-direction: row;
@@ -46,10 +46,21 @@
 }
 
 .tecnoImg{
-    width: 7rem;
+    width: 6rem;
     margin: 0 0.5rem;
-    border-radius: 999px;
-    background-color: white;
+    /* padding: 1rem; */
+    border-radius: 100%;
+    background-color: var(--darlBlue);
+    /* background-color: white; */
+    border: 1px solid var(--middlePurple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnoImg img{
+    margin: 1rem;
+    max-width: 3.5rem;
 }
 
 .projectListText{
