@@ -103,7 +103,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //Calculadora
-        for($i = 1; $i <= 18; $i++){
+        for($i = 1; $i <= 16; $i++){
             Image::factory()->create([
                 'project_image' =>  false,
                 'url'           =>  "calculadora/calculadora ($i).jpeg",
