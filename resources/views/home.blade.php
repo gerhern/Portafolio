@@ -7,7 +7,7 @@
         <div class="middleOpacity">
             <div class="descriptionBox">
                 <h1>Desarrollador de software</h1>
-                <h3><span class="importantSpan">{{env('APP_PORTNAME')}} </span>Desarrollador backend</h3>
+                <h3><span class="importantSpan">{{env('APP_PORTNAME')}} </span>Ingeniero en Computación</h3>
                 <p>Egresado de la carrera de Ingeniería en computación por parte de la UNAM, busco desarrollar nuevas habilidades en la creación de software, mi mayor conocimiento corresponde con el desarrollo web usando tecnologías como PHP, Angular, Laravel y JavaScript, disfruto de escribir código con el cual crear nuevas herramientas y aplicaciones.</p>
                 <div class="media">
                     <a href="https://github.com/gerhern" target="blank">
@@ -129,7 +129,7 @@
                     <h4 class="smallText textEBlue">Administración de Tecnologías de la Información</h4>
                     <ul class="professionalList">
                         <li>Desarrollo de aplicación web realizada con arquitectura Modelo-Vista-Controlador</li>
-                        <li>Implementación logica de negocio mediante:</li>
+                        <li>Implementación lógica de negocio mediante:</li>
                             <ul>
                                 <li>Php</li>
                                 <li>Composer</li>
