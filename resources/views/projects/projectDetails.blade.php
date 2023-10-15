@@ -50,6 +50,9 @@
             <img class="galeryImg" src="https://picsum.photos/300/200" alt="photo">
             <img class="galeryImg" src="https://picsum.photos/300/200" alt="photo"> --}}
         </div>
+        @isset($demo)
+            <a class="regularButton" href="{{ $demo }}" target="_blank">Ver demo</a>
+        @endisset
     </section>
 </div>
 @endsection

@@ -42,10 +42,14 @@ class webController extends Controller
     //Detalles por proyecto
     public function projectDetails($id){
 
+        $demo = null;
+
         try{
 
             $project = Project::with(['technologies', 'images'])->findOrFail($id);
-            // dd($project);
+            if($id == 2){
+                $demo = "http://18.224.24.3:1005";
+            }
 
         }
         catch(Exception $e){
@@ -53,7 +57,8 @@ class webController extends Controller
         }
         
         return view('projects.projectDetails', [
-            'project' => $project
+            'project' => $project,
+            'demo'    => $demo
         ]);
 
     }
