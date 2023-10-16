@@ -83,3 +83,9 @@
     max-width: 30rem;
     max-height: 30rem;
 }
+
+.demoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

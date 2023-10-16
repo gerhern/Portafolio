@@ -49,6 +49,8 @@ class webController extends Controller
             $project = Project::with(['technologies', 'images'])->findOrFail($id);
             if($id == 2){
                 $demo = "http://18.224.24.3:1005";
+            }else if($id == 3){
+                $demo = "http://18.224.24.3:1006";
             }
 
         }
