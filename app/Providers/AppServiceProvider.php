@@ -24,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if(config('app.env') === 'production') {
+            \URL::forceScheme('https');
+        }
         //
     Carbon::setLocale(config(LC_ALL, 'es_MX', 'es', 'ES', 'es_MX.utf8'));
     }
