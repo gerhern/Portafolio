@@ -4,9 +4,13 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Academy;
 use App\Models\Image;
+use App\Models\Job;
 use App\Models\Project;
+use App\Models\Skill;
 use App\Models\Technology;
+use Database\Factories\SkillFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -104,7 +108,126 @@ class DatabaseSeeder extends Seeder
             'name' => "Bootstrap",
             'url_image' => 'bootstrap-img.png'
         ]);
-        
+
+        //Habilidades
+        Skill::factory()->create([
+            'name'          => 'Ingles',
+            'description'   => 'Dominio del idioma inglés nivel B1',
+            'level'         => 70,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Poo',
+            'description'   => 'Programación Estructurada y Orientada a Objetos',
+            'level'         => 65,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Compañerismo',
+            'description'   => 'Habilidad en trabajo en equipo',
+            'level'         => 90,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Mvc',
+            'description'   => 'Arquitectura de software Modelo Vista Controlador',
+            'level'         => 70,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Php',
+            'description'   => 'Php',
+            'level'         => 85,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Laravel',
+            'description'   => 'Framework de desarrollo web-backend Laravel',
+            'level'         => 80,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Angular',
+            'description'   => 'Framework de desarrollo web-frontend Angular',
+            'level'         => 60,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Os',
+            'description'   => 'Sistema operativo Linux',
+            'level'         => 60,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'Frontend',
+            'description'   => 'Html, Css y JavaScript',
+            'level'         => 80,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Skill::factory()->create([
+            'name'          => 'DB',
+            'description'   => 'MySQL, SQL Server y PostgreSQL',
+            'level'         => 60,
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        //Trabajos
+        Job::create([
+           'company'        =>  'Dorothy Gaynor',
+            'position'      =>  'Desarrollador Jr. y Base de Datos',
+            'start_date'    =>  '2022-03-22',
+            'end_date'      =>  '2023-05-31',
+            'activities'    => 'Mantenimiento de aplicaciones, Desarrollo de herramientas para la solución de necesidades de diversas áreas. Liberación de aplicaciones en servidor, Ejecución y optimización de consultas SQL',
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Job::create([
+            'company'       =>  'Agencia reguladora de transporte ferroviario',
+            'position'      =>  'Servicio Social -Calculadora de Emisiones-',
+            'start_date'    =>  '2021-01-01',
+            'end_date'      =>  '2022-01-01',
+            'activities'    => 'Aplicación web, Calculadora de emisiones de gases de efecto invernadero, Desarrollo mediante Php y Laravel 8, Planeación para su continuo desarrollo',
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Job::create([
+            'company'       =>  'Fes Aragon UNAM',
+            'position'      =>  'Proyecto Escolar -Cultura Filadelfia-',
+            'start_date'    =>  '2020-01-01',
+            'end_date'      =>  '2021-01-01',
+            'activities'    => 'Desarrollo de aplicación web realizada con arquitectura Modelo-Vista-Controlador, Implementación lógica de negocio mediante: Php, Composer, JavaScript',
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        Job::create([
+            'company'       =>  'Secretaria de Administracion y Finanzas',
+            'position'      =>  'Jefe de Unidad Departamental de Soporte Tecnologico de Sistemas',
+            'start_date'    =>  '2024-01-01',
+            'end_date'      =>  '2099-12-31',
+            'activities'    => 'Desarrollo y mantenimiento de aplicaciones, atencion a usuarios finales ',
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
+        //Escolaridad y cursos
+
+        Academy::create([
+            'name'          =>  'Ingeniería en Computación',
+            'academy'       =>  'Facultad de Estudios Superiores Aragón',
+            'academy_type'  =>  'Escuela',
+            'start_date'    =>  '2016-01-01',
+            'end_date'      =>  '2021-01-01',
+            'image'         => 'https://picsum.photos/50'
+        ]);
+
         //Imagenes por proyecto
         //Inventario
         for($i = 1; $i <= 7; $i++){
