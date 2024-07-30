@@ -21,5 +21,5 @@ use App\Http\Controllers\ApiController;
 //});
 
     Route::prefix('v1/')->group(function (){
-       Route::get('home', [ApiController::class, 'index']);
+       Route::post('home', [ApiController::class, 'index']);
     });

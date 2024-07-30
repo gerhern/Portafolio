@@ -114,70 +114,70 @@ class DatabaseSeeder extends Seeder
             'name'          => 'Ingles',
             'description'   => 'Dominio del idioma inglés nivel B1',
             'level'         => 70,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/world-logo.svg'
         ]);
 
         Skill::factory()->create([
             'name'          => 'Poo',
             'description'   => 'Programación Estructurada y Orientada a Objetos',
             'level'         => 65,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/poo-logo.svg'
         ]);
 
         Skill::factory()->create([
-            'name'          => 'Compañerismo',
-            'description'   => 'Habilidad en trabajo en equipo',
+            'name'          => 'Trabajo en equipo',
+            'description'   => 'Habilidad para trabajar proyectos en equipo',
             'level'         => 90,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/handshake-logo.svg'
         ]);
 
         Skill::factory()->create([
             'name'          => 'Mvc',
             'description'   => 'Arquitectura de software Modelo Vista Controlador',
             'level'         => 70,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/software-logo.svg'
         ]);
 
         Skill::factory()->create([
             'name'          => 'Php',
-            'description'   => 'Php',
+            'description'   => 'Desarrollo web con PHP',
             'level'         => 85,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/php-logo.svg'
         ]);
 
         Skill::factory()->create([
             'name'          => 'Laravel',
             'description'   => 'Framework de desarrollo web-backend Laravel',
             'level'         => 80,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/laravel-logo.svg'
         ]);
 
         Skill::factory()->create([
             'name'          => 'Angular',
             'description'   => 'Framework de desarrollo web-frontend Angular',
             'level'         => 60,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/angular-logo.svg'
         ]);
 
         Skill::factory()->create([
-            'name'          => 'Os',
-            'description'   => 'Sistema operativo Linux',
+            'name'          => 'Linux',
+            'description'   => 'Manejo del sistema operativo Linux',
             'level'         => 60,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/linux-logo.svg'
         ]);
 
         Skill::factory()->create([
             'name'          => 'Frontend',
             'description'   => 'Html, Css y JavaScript',
             'level'         => 80,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/webdev-logo.svg'
         ]);
 
         Skill::factory()->create([
             'name'          => 'DB',
             'description'   => 'MySQL, SQL Server y PostgreSQL',
             'level'         => 60,
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'img/logos/sql-logo.svg'
         ]);
 
         //Trabajos
@@ -225,7 +225,16 @@ class DatabaseSeeder extends Seeder
             'academy_type'  =>  'Escuela',
             'start_date'    =>  '2016-01-01',
             'end_date'      =>  '2021-01-01',
-            'image'         => 'https://picsum.photos/50'
+            'image'         =>  'assets/img/logos/unam-logo.svg'
+        ]);
+
+        Academy::create([
+            'name'          =>  'Desarrollo Web Backend Con Php',
+            'academy'       =>  'Platzi',
+            'academy_type'  =>  'Certificacion',
+            'start_date'    =>  '2016-01-01',
+            'end_date'      =>  '2021-07-31',
+            'image'         => 'assets/img/logos/platzi.svg'
         ]);
 
         //Imagenes por proyecto
