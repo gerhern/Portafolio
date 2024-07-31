@@ -24,7 +24,7 @@ class ApiController extends Controller
                     }
                 break;
                 case 'jobs':
-                    $jobs = Job::all(['company', 'position', 'start_date', 'end_date', 'activities', 'image']);
+                    $jobs = Job::all(['id','company', 'position', 'start_date', 'end_date', 'activities', 'image']);
                     if(count($jobs) === 0){
                         throw new \Exception("Información laboral no encontrada", 404);
                     }

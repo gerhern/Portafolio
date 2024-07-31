@@ -186,8 +186,8 @@ class DatabaseSeeder extends Seeder
             'position'      =>  'Desarrollador Jr. y Base de Datos',
             'start_date'    =>  '2022-03-22',
             'end_date'      =>  '2023-05-31',
-            'activities'    => 'Mantenimiento de aplicaciones, Desarrollo de herramientas para la solución de necesidades de diversas áreas. Liberación de aplicaciones en servidor, Ejecución y optimización de consultas SQL',
-            'image'         => 'https://picsum.photos/50'
+            'activities'    => 'Mantenimiento de aplicaciones, Desarrollo de herramientas para la solución de necesidades de diversas áreas, Liberación de aplicaciones en servidor, Ejecución y optimización de consultas SQL',
+            'image'         => 'assets/img/inventarioInterno/dorothy.png'
         ]);
 
         Job::create([
@@ -196,7 +196,7 @@ class DatabaseSeeder extends Seeder
             'start_date'    =>  '2021-01-01',
             'end_date'      =>  '2022-01-01',
             'activities'    => 'Aplicación web, Calculadora de emisiones de gases de efecto invernadero, Desarrollo mediante Php y Laravel 8, Planeación para su continuo desarrollo',
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'assets/img/calculadora/artf.jpg'
         ]);
 
         Job::create([
@@ -205,7 +205,7 @@ class DatabaseSeeder extends Seeder
             'start_date'    =>  '2020-01-01',
             'end_date'      =>  '2021-01-01',
             'activities'    => 'Desarrollo de aplicación web realizada con arquitectura Modelo-Vista-Controlador, Implementación lógica de negocio mediante: Php, Composer, JavaScript',
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'assets/img/cultura/cultura.jpg'
         ]);
 
         Job::create([
@@ -214,7 +214,7 @@ class DatabaseSeeder extends Seeder
             'start_date'    =>  '2024-01-01',
             'end_date'      =>  '2099-12-31',
             'activities'    => 'Desarrollo y mantenimiento de aplicaciones, atencion a usuarios finales ',
-            'image'         => 'https://picsum.photos/50'
+            'image'         => 'assets/img/saf/logo.png'
         ]);
 
         //Escolaridad y cursos
