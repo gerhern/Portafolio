@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Academy;
 use App\Models\Job;
+use App\Models\Project;
 use App\Models\Skill;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -35,6 +36,13 @@ class ApiController extends Controller
                         throw new \Exception("Información academica no encontrada", 404);
                     }
                     break;
+                case 'projects':
+                    $projects = Project::all(['id', 'title', 'short_description', 'description']);
+                    $projects = Project::with('technologies:name,url_image')->get(['id', 'title', 'short_description', 'description']);
+                    if(count($projects) === 0){
+                        throw new \Exception("Información de proyectos no encontrada", 404);
+                    }
+                    break;
                 default:
                     throw new \Exception("Tipo de consulta no valida", 404);
                     break;
@@ -46,7 +54,8 @@ class ApiController extends Controller
                     'data'    => [
                         'skills' => $skills ?? '',
                         'jobs' => $jobs ?? '',
-                        'academies' => $academies ?? ''
+                        'academies' => $academies ?? '',
+                        'projects' => $projects ?? '',
                     ]
                 ],200);
 
