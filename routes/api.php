@@ -22,4 +22,5 @@ use App\Http\Controllers\ApiController;
 
     Route::prefix('v1/')->group(function (){
        Route::post('home', [ApiController::class, 'index']);
+       Route::post('project', [ApiController::class, 'getProjectData']);
     });
