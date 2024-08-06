@@ -41,6 +41,22 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Project::factory()->create([
+            'title'             =>  'Cultura filadelfia',
+            'short_description' =>  'Sistema de administración de estudiantes para la mejora de una institución educativa católica.',
+            'description'       =>  'Como parte de un proyecto para la materia de "Administración de tecnologias de la información", se contacta con una institución católica la cual tiene un manejo de alumnos, profesores y cursos manual, es decir todo lo mencionado anteriormente se manejaba con archivos de excel, por lo que despues de una serie de entrevistas tecnicas se obtienen los parametros necesarios para llevar a cabo el desarrollo.<br><br>Este proyecto fue desarrollado por un total de 4 estudiantes con la supervisión de una profesora de la UNAM.<br><br>Entre las capacidades de este software se encuentran:<br>Manejo de usuarios y privilegios (alumno, maestro y adjunto)<br>Creación, edición e inscripción a cursos<br>Manejo de archivos pdf (materiales de apoyo)<br>Sistema serializado de incripciones y pagos de cursos',
+            // 'url_img'           =>  'cultura.jpg',
+            'created_at'        =>  '2020-06-05 12:00:00'
+        ]);
+
+        Project::factory()->create([
+            'title' => 'Credencialización',
+            'short_description' => 'Sistema de manejo y emisión de credenciales de servidores públicos de la Ciudad de México.',
+            'description'       => 'Credencialización es un sistema que maneja los registros de todos los funcionarios públicos de la CDMX.<br><br> Este sistema es bastante robusto debido a que cuenta con una variedad de funciones entre las que destacan:<br>-Manejo de roles de usuario.<br>-Creación y emisión de credenciales.<br>-Fechas de vigencia para las credenciales emitidas.<br>-Módulo de registros de entradas/salidas de visitantes a inmuebles gubernamentales.<br>-Registro verificación y validación de datos de usuarios.<br>-Carga y baja masiva de credenciales.<br><br>Este sistema se trata de un proyecto heredado el cual tras una revision de estructura y funciones se tomo la desición de comenzar en una serie de modificaciones como:<br>-Refactorización de funciones.<br>-Optimización de Query\'s,<br>-Creación de servicios de consulta.',
+            // 'url_img'           =>  'unam.svg',
+            'created_at'        =>  '2023-11-29 12:00:00'
+        ]);
+
+        Project::factory()->create([
             'title' => 'Evaluación técnica UNAM',
             'short_description' => 'Evaluación técnica de conocimientos básicos de programación para acceso a la UNAM.',
             'description'       => 'Prueba técnica para ingreso laboral a la UNAM, el objetivo se trata de crear una aplicación simple la cual está compuesta de una API REST y un CRUD de empleados relacionados mediante una fecha de nacimiento/id a través de una base de datos MySQL.<br><br>Entre los puntos necesarios para aprobar esta evaluación técnica, tenemos:<br>Tiempo límite de desarrollo de 6 horas<br>Manejo de base de datos relacional y extracción de información de más de una tabla simultaneamente<br>Uso de framework de estilos para el maquetado<br>Uso de AJAX para búsquedas asíncronas<br>Inclusión de una API REST para la consulta y creación de registros.',
@@ -48,13 +64,6 @@ class DatabaseSeeder extends Seeder
             'created_at'        =>  '2021-07-29 12:00:00'
         ]);
 
-        Project::factory()->create([
-            'title'             =>  'Cultura filadelfia',
-            'short_description' =>  'Sistema de administración de estudiantes para la mejora de una institución educativa católica.',
-            'description'       =>  'Como parte de un proyecto para la materia de "Administración de tecnologias de la información", se contacta con una institución católica la cual tiene un manejo de alumnos, profesores y cursos manual, es decir todo lo mencionado anteriormente se manejaba con archivos de excel, por lo que despues de una serie de entrevistas tecnicas se obtienen los parametros necesarios para llevar a cabo el desarrollo.<br><br>Este proyecto fue desarrollado por un total de 4 estudiantes con la supervisión de una profesora de la UNAM.<br><br>Entre las capacidades de este software se encuentran:<br>Manejo de usuarios y privilegios (alumno, maestro y adjunto)<br>Creación, edición e inscripción a cursos<br>Manejo de archivos pdf (materiales de apoyo)<br>Sistema serializado de incripciones y pagos de cursos',
-            // 'url_img'           =>  'cultura.jpg',
-            'created_at'        =>  '2020-06-05 12:00:00'
-        ]);
 
 
 
@@ -107,6 +116,11 @@ class DatabaseSeeder extends Seeder
         Technology::factory()->create([
             'name' => "Bootstrap",
             'url_image' => 'bootstrap-img.png'
+        ]);
+
+        Technology::factory()->create([
+            'name' => "Postgresql",
+            'url_image' => 'postgresql-img.png'
         ]);
 
         //Habilidades
@@ -200,7 +214,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Job::create([
-            'company'       =>  'Fes Aragon UNAM',
+            'company'       =>  'FES Aragon UNAM',
             'position'      =>  'Proyecto Escolar -Cultura Filadelfia-',
             'start_date'    =>  '2020-01-01',
             'end_date'      =>  '2021-01-01',
@@ -271,7 +285,7 @@ class DatabaseSeeder extends Seeder
             Image::factory()->create([
                 'project_image' =>  false,
                 'url'           =>  "bua/bua ($i).jpeg",
-                'project_id'    =>  3
+                'project_id'    =>  5
             ]);
         }
 
@@ -286,14 +300,23 @@ class DatabaseSeeder extends Seeder
             Image::factory()->create([
                 'project_image' =>  false,
                 'url'           =>  "cultura/cultura ($i).jpeg",
-                'project_id'    =>  4
+                'project_id'    =>  3
             ]);
         }
 
         Image::factory()->create([
             'project_image' =>  true,
             'url'           =>  "cultura/cultura.jpg",
-            'project_id'    =>  4
+            'project_id'    =>  3
         ]);
+
+        //SAF
+        for($i = 1; $i <= 3; $i++){
+            Image::factory()->create([
+                'project_image' =>  false,
+                'url'           =>  "credencializacion/credencializacion($i).jpg",
+                'project_id'    =>  4
+            ]);
+        }
     }
 }
